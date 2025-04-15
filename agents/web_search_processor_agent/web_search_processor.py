@@ -61,13 +61,21 @@ class WebSearchProcessor:
         # print(f"[WebSearchProcessor] Fetched results: {web_results}")
         
         # Construct prompt to LLM for processing the results
+        # llm_prompt = (
+        #     "You are an AI assistant specialized in medical information. Below are web search results "
+        #     "retrieved for a user query. Summarize and generate a helpful, concise response. "
+        #     "Use reliable sources only and ensure medical accuracy.\n\n"
+        #     f"Query: {query}\n\nWeb Search Results:\n{web_results}\n\nResponse:"
+        # )
+
         llm_prompt = (
             "You are an AI assistant specialized in medical information. Below are web search results "
-            "retrieved for a user query. Summarize and generate a helpful, concise response. "
-            "Use reliable sources only and ensure medical accuracy.\n\n"
-            f"Query: {query}\n\nWeb Search Results:\n{web_results}\n\nResponse:"
+            "retrieved for a user query. Summarize and generate a helpful, medically accurate response. "
+            "Use only reliable sources. After the summary, include a list of source pages or URLs where the information was found.\n\n"
+            f"Query: {query}\n\nWeb Search Results:\n{web_results}\n\n"
+            "Response (Include summary first, then cite the source pages at the end):"
         )
-        
+                
         # Invoke the LLM to process the results
         response = self.llm.invoke(llm_prompt)
         

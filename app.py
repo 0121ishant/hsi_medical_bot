@@ -23,6 +23,7 @@ app.config['SPEECH_DIR'] = 'uploads/speech'
 app.config['MAX_CONTENT_LENGTH'] = config.api.max_image_upload_size * 1024 * 1024  # Convert MB to bytes
 app.config['ELEVEN_LABS_API_KEY'] = config.speech.eleven_labs_api_key
 app.config['API_URL'] = "http://localhost:8000"  # Your FastAPI backend URL
+#app.config['API_URL'] = os.getenv("FASTAPI_URL", "http://localhost:8000")
 
 # Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)

@@ -1,8 +1,6 @@
 <div align="center">
- 
-![logo](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant/blob/main/assets/logo_rounded.png)
 
-<h1 align="center"><strong>⚕️ Multi-Agent-Medical-Assistant :<h6 align="center">AI-powered multi-agentic system for medical diagnosis and assistance</h6></strong></h1>
+<h1 align="center"><strong>⚕️ HSI Medical Intelligent Bot :<h6 align="center">AI-powered multi-agentic system for medical diagnosis and assistance</h6></strong></h1>
 
 <!-- ![PyTorch - Version](https://img.shields.io/badge/PYTORCH-2.0+-red?style=for-the-badge&logo=pytorch) -->
 ![Python - Version](https://img.shields.io/badge/PYTHON-3.11+-blue?style=for-the-badge&logo=python&logoColor=white)
@@ -18,24 +16,6 @@
 
 </div>
 
-----
- 
-## 📚 Table of Contents
-- [Overview](#overview)
-- [Demo](#demo)
-- [Technical Flow Chart](#technical-flowchart)
-- [Key Features](#key-features)
-- [Tech Stack](#technology-stack)
-- [Installation and Setup](#installation-setup)
-  - [Using Docker](#docker-setup)
-  - [Manual Installation](#manual-setup)
-- [Usage](#usage)
-- [Contributions](#contributions)
-- [License](#license)
-- [Citing](#citing)
-- [Contact](#contact)
-
-----
 
 ## 📌 Overview <a name="overview"></a>
 
@@ -66,15 +46,10 @@ For learners: Refer `agents/README.md` for detailed explanation of the agentic w
 
 ---
 
-## 💫 Demo <a name="demo"></a>
+<!-- 
+If you like what you see and would want to support the project's developer, you can <a href="https://www.buymeacoffee.com/souvikmajumder" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> ! :) -->
 
-
-https://github.com/user-attachments/assets/d27d4a2e-1c7d-45e2-bbc5-b3d95ccd5b35
-
-
-If you like what you see and would want to support the project's developer, you can <a href="https://www.buymeacoffee.com/souvikmajumder" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> ! :)
-
-📂 **For an even more detailed demo video**: Check out [`Multi-Agent-Medical-Assistant-v1.9`](assets/Multi-Agent-Medical-Assistant-v1.9_Compressed.mp4). 📽️
+<!-- 📂 **For an even more detailed demo video**: Check out [`Multi-Agent-Medical-Assistant-v1.9`](assets/Multi-Agent-Medical-Assistant-v1.9_Compressed.mp4). 📽️ -->
 
 ---
 
@@ -136,10 +111,6 @@ If you like what you see and would want to support the project's developer, you 
 
 - 💻 **Intuitive User Interface** : Designed for healthcare professionals with minimal technical expertise
 
-> [!NOTE]  
-> Upcoming features:
-> 1. Brain Tumor Medical Computer Vision model integration.
-> 2. Streaming of LLM responses to UI.
 
 ---
 
@@ -166,12 +137,9 @@ If you like what you see and would want to support the project's developer, you 
 ## 📌 Option 1: Using Docker  <a name="docker-setup"></a>
 
 ### 1️⃣ Clone the Repository  
-```bash  
-git clone https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant.git  
-cd Multi-Agent-Medical-Assistant  
-```
 
-### 2️⃣ Set Up API Keys  
+
+<!-- ### 2️⃣ Set Up API Keys  
 - Create a `.env` file and add the following API keys:
 
 > [!NOTE]  
@@ -209,11 +177,6 @@ TAVILY_API_KEY =
 # Hugging Face Token - using reranker model "ms-marco-TinyBERT-L-6"
 HUGGINGFACE_TOKEN = 
 
-# (OPTIONAL) If using Qdrant server version, local does not require API key
-QDRANT_URL = 
-QDRANT_API_KEY = 
-```
-
 ### 3️⃣ Run with Docker Compose
 ```bash
 docker-compose up -d
@@ -243,10 +206,6 @@ docker-compose down
 ## 📌 Option 2: Manual Installation  <a name="manual-setup"></a>
 
 ### 1️⃣ Clone the Repository  
-```bash  
-git clone https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant.git  
-cd Multi-Agent-Medical-Assistant  
-```
 
 ### 2️⃣ Create & Activate Virtual Environment  
 - If using conda:
@@ -259,7 +218,7 @@ conda activate <environment-name>
 python -m venv <environment-name>
 source <environment-name>/bin/activate  # For Mac/Linux
 <environment-name>\Scripts\activate     # For Windows  
-```
+``` -->
 
 ### 3️⃣ Install Dependencies  
 
@@ -385,9 +344,9 @@ docker-compose up -d --build
 - Review AI-generated insights with **human-in-the-loop verification**.  
 
 ---
-
+<!-- 
 ## 🤝 Contributions  <a name="contributions"></a>
-Contributions are welcome! Please check the [issues](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant/issues) tab for feature requests and improvements.  
+Contributions are welcome! Please check the [issues](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant/issues) tab for feature requests and improvements.   -->
 
 ---
 
@@ -396,26 +355,9 @@ This project is licensed under the **Apache-2.0 License**. See the [LICENSE](LIC
 
 ---
 
-## 📝 Citing <a name="citing"></a>
-```
-@misc{Souvik2025,
-  Author = {Souvik Majumder},
-  Title = {Multi Agent Medical Assistant},
-  Year = {2025},
-  Publisher = {GitHub},
-  Journal = {GitHub repository},
-  Howpublished = {\url{https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant}}
-}
-```
+
 
 ---
-
-## 📬 Contact  <a name="contact"></a>
-For any questions or collaboration inquiries, reach out to **Souvik Majumder** on:  
-
-🔗 **LinkedIn**: [https://www.linkedin.com/in/souvikmajumder26](https://www.linkedin.com/in/souvikmajumder26)
-
-🔗 **GitHub**: [https://github.com/souvikmajumder26](https://github.com/souvikmajumder26)
 
 <p align="right">
  <a href="#top"><b>🔝 Return </b></a>
