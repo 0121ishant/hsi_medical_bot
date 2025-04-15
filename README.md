@@ -132,8 +132,6 @@ If you like what you see and would want to support the project's developer, you 
 
 ## 🚀 Installation & Setup  <a name="installation-setup"></a>
 
-## 📌 Option 1: Using Docker  <a name="docker-setup"></a>
-
 ### 1️⃣ Clone the Repository  
 
 
