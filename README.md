@@ -10,9 +10,7 @@
 ![FastAPI - Version](https://img.shields.io/badge/FastAPI-0.115+-teal?style=for-the-badge&logo=fastapi)
 ![Pydantic - Version](https://img.shields.io/badge/Pydantic-2.10+-red?style=for-the-badge&logo=pydantic)
 ![Flask - Version](https://img.shields.io/badge/Flask-3.1+-blue?style=for-the-badge&logo=flask)
-[![Generic badge](https://img.shields.io/badge/License-Apache-<COLOR>.svg?style=for-the-badge)](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant/blob/main/LICENSE) 
-[![GitHub Issues](https://img.shields.io/github/issues/souvikmajumder26/Multi-Agent-Medical-Assistant.svg?style=for-the-badge)](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant/issues)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg?style=for-the-badge)
+
 
 </div>
 
@@ -207,18 +205,17 @@ docker-compose down
 
 ### 1️⃣ Clone the Repository  
 
-### 2️⃣ Create & Activate Virtual Environment  
-- If using conda:
-```bash
-conda create --name <environment-name> python=3.11
-conda activate <environment-name>
+2️⃣ Create & Activate Virtual Environment  
+<!-- - If using conda:
+```bash conda create --name <environment-name> python=3.11
+conda activate <environment-name> -->
 ```
 - If using python venv:
 ```bash
 python -m venv <environment-name>
 source <environment-name>/bin/activate  # For Mac/Linux
 <environment-name>\Scripts\activate     # For Windows  
-``` -->
+``` --> -->
 
 ### 3️⃣ Install Dependencies  
 
@@ -279,7 +276,7 @@ pip install unstructured[pdf]
 ```
 
 ### 4️⃣ Set Up API Keys  
-- Create a `.env` file and add the required API keys as shown in `Option 1`.
+- Create a `.env` file and add the required API keys.
 
 ### 5️⃣ Run the Application  
 - Run the following commands one after another in separate windows with same directorty and virtual environment. Keep both running simultanesouly.
@@ -301,35 +298,6 @@ python ingest_rag_data.py --file ./data/raw/brain_tumors_ucni.pdf
 python ingest_rag_data.py --dir ./data/raw
 ```
 
----
-
-## Docker Related Information:
-
-### Data Persistence
-
-The vector database data is stored in Docker volumes:
-
-- `vector-db-processed`: Contains data from the `data/processed` directory
-- `vector-db-qdrant`: Contains data from the `data/qdrantdb` directory
-- `upload-data`: Contains uploaded files in the `uploads` directory
-
-This ensures your data persists even if you remove the containers.
-
-### Troubleshooting Docker Setup
-
-- If the containers aren't starting properly, check logs:
-```bash
-docker-compose logs fastapi-backend
-docker-compose logs main-app
-```
-- Make sure all required environment variables are set in the `.env` file
-- To completely clean up and restart:
-```bash
-docker-compose down -v
-docker-compose up -d --build
-```
-
----
 
 ## 🧠 Usage  <a name="usage"></a>
 
@@ -364,3 +332,4 @@ This project is licensed under the **Apache-2.0 License**. See the [LICENSE](LIC
 </p>
 
 ---
+# HSI_Medical_Bot
