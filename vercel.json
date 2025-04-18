@@ -10,7 +10,8 @@
  "routes": [
   {
    "src": "/(.*)",
-   "dest": "templates/index.html"
+   "dest": "templates/index.html",
+   "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
   }
  ]
 }
