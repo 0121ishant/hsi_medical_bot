@@ -164,7 +164,8 @@ python-multipart==0.0.20
 python-oxmsg==0.0.2
 python-pptx==1.0.2
 pytz==2025.1
-pywin32==307
+#pywin32==307
+pywin32==307; platform_system == "Windows"
 PyYAML==6.0.2
 qdrant-client==1.13.3
 RapidFuzz==3.12.2
